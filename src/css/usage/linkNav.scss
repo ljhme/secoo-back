@@ -1,0 +1,32 @@
+.linkNavContianer{
+	display: flex;
+	align-items: center;
+	height: 45px;
+	span{
+		padding: 0 6px;
+	}
+	.triangel{
+		width: 0;
+		height: 0;
+		border-width: 8px;
+		border-style: solid;
+		border-color: transparent transparent transparent #4293D0;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		list-style: none;
+		li{
+			list-style: none;
+			padding: 0 6px;
+		}
+	}
+}
+.botLine{
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: #E1E1E1;
+}

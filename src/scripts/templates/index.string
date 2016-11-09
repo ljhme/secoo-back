@@ -1,0 +1,64 @@
+<div class="container-fluid indexContianer">
+	<div class="row row-fluid header well">
+		<h1 class="col-md-2">
+			<a href="index.html">
+				<img src="./images/index_logo.png" alt="secooLogo" width="60" height="60">
+			</a>
+			寺库
+		</h1>
+		<div class="col-md-5">
+			<h3 class="secooTitle">致力打造全球高端消费服务平台<small>——secoo</small></h3>
+		</div>
+		 <div class="col-lg-3">
+		    <div class="input-group">
+		      <input type="text" class="form-control">
+		      <span class="input-group-btn">
+		        <button class="btn btn-default mysear" type="button"><span class="glyphicon glyphicon-search"></span></button>
+		      </span>
+		    </div>
+		 </div>
+		<div class="btn-group col-md-2">
+		  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+		  <span class="glyphicon glyphicon-user"></span>
+		    登录名 <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+		    <li>退出</li>
+		    <li>重新登录</li>
+		  </ul>
+		</div>
+	</div>
+	<div class="row mainContainer">
+	  <div class="col-xs-2 col-sm-2 col-lg-2 col-md-2 mainLeft">
+		<div class="sidebar-menu">
+		    <a href="#userMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-user icon-large"></i> 用户管理</a>
+		    <ul id="userMeun" class="nav nav-list collapsed menu-second">
+		        <li><a href="#/addUesr"><i class="glyphicon glyphicon-plus"></i> 增加用户</a></li>
+		        <li><a href="#/userList""><i class="glyphicon glyphicon-pencil"></i> 修改用户</a></li>
+		        <li><a href="#/userList"><i class="glyphicon glyphicon-trash"></i> 删除用户</a></li>
+		        <li><a href="#/userList"><i class="glyphicon glyphicon-list-alt"></i> 用户列表</a></li>
+		 
+		    </ul>
+		    <a href="#articleMenu" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-credit-card icon-large"></i>仓库管理</a>
+		    <ul id="articleMenu" class="nav nav-list collapsed menu-second">
+		    	<li><a href="#"><i class="glyphicon glyphicon-th-large"></i> 库存信息</a></li>
+		        <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> 库存列表</a></li>
+		        <li><a href="#"><i class="glyphicon glyphicon-import"></i> 商品入库</a></li>
+		    </ul>
+		    <a href="#orderMenu" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-list-alt icon-large"></i> 订单管理</a>
+		    <ul id="orderMenu" class="nav nav-list collapsed menu-second">
+		        <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i> 查看订单</a></li>
+		        <li><a href="#"><i class="glyphicon glyphicon-wrench"></i> 订单处理</a></li>
+		    </ul>
+		    <a href="#goodsMenu" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-briefcase icon-large"></i> 商品管理</a>
+		    <ul id="goodsMenu" class="nav nav-list collapsed menu-second">
+		        <li><a href="#"><i class="glyphicon glyphicon-plus"></i> 添加商品</a></li>
+		        <li><a href="#"><i class="glyphicon glyphicon-tag"></i> 新货上架</a></li>
+		    </ul>
+		</div>
+	  </div>
+	  <div class="col-xs-10 col-sm-10 col-lg-10 col-md-10 mainRight">
+		<ng-view></ng-view>
+	  </div>
+	</div>
+</div>

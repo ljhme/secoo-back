@@ -1,0 +1,48 @@
+.userListContianer{
+	.userListSearch{
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		span{
+			font-size: 16px;
+			color: #4293D0;
+		}
+		div{
+			width: 30%;
+			margin-left: 16px;
+		}
+		margin-bottom:7px;
+
+	}
+	table{
+		tr{
+			td{
+				.userModify{
+					font-size: 8px;
+					color: #4293D0;
+					span{
+						font-size: 14px;
+					}
+					margin-right:8px;
+					cursor: pointer;
+				}
+				.userDelete{
+					font-size: 8px;
+					color: #CCAA55;
+					background: none;
+					border: none;
+					span{
+						font-size: 14px;
+					}
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.ackDeleteButton{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 60px;
+	}
+}

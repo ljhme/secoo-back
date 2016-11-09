@@ -1,0 +1,70 @@
+<div class="addUserContainer" ng-controller = "updateUserInfoCtrl">
+	<link-nav></link-nav>
+	<table class="table table-bordered">
+	  <tr>
+	  	<td colspan="7">用户信息</td>
+	  </tr>
+	  <tr>
+	  	<td>姓名<span>*</span></td>
+	  	<td><input type="text" ng-model="userObjInfo.name"></td>
+	  	<td>名族<span>*</span></td>
+	  	<td><input type="text" ng-model="userObjInfo.ethnic"></td>
+	  	<td>学历</td>
+	  	<td><input type="text" ng-model="userObjInfo.schooling"></td>
+	  	<td colspan="2" rowspan="4" class="photoTd"><input type="file" accept="image/png,image/gif,image/jpg" name="">
+			<div class="photo">
+				<span class="glyphicon glyphicon-user"></span>
+			</div>
+	  	</td>
+	  </tr>
+	  <tr>
+	  	<td>出生年月<span>*</span></td>
+	  	<td><input type="text" ng-model="userObjInfo.birth"></td>
+	  	<td>员工编号</td>
+	  	<td><input type="text" ng-model="userObjInfo.id"></td>
+	  	<td>手机<span>*</span></td>
+	  	<td><input type="text" ng-model="userObjInfo.tel"></td>
+	  </tr>
+	  <tr>
+	  	<td>入职时间</td>
+	  	<td><input type="text" ng-model="userObjInfo.inductionTime"></td>
+	  	<td>所属部门<span>*</span></td>
+	  	<td><input type="text" ng-model="userObjInfo.department"></td>
+	  	<td>微信</td>
+	  	<td><input type="text" ng-model="userObjInfo.weixin"></td>
+	  </tr>
+	  <tr>
+	  	<td>职位</td>
+	  	<td><input type="text" ng-model="userObjInfo.position"></td>
+	  	<td>职业等级</td>
+	  	<td><input type="text" ng-model="userObjInfo.jobTitle"></td>
+	  	<td>邮箱</td>
+	  	<td><input type="text" ng-model="userObjInfo.email"></td>
+	  </tr>
+	  <tr>
+	  	<td>地址</td>
+	  	<td colspan="6"><input type="text" ng-model="userObjInfo.address"></td>
+	  </tr>
+	  <tr class="buttonTr">
+	  	<td colspan="5" class="buttonTd"><span>注: * 项为必填项目</span><span ng-model="errorMes" class="errorMes">{{errorMes}}</span></td>
+	  	<td class="buttonTd">
+	  		<a href="#/userList"><button type="button" class="btn btn-primary" ng-click="addUserCancel()">　取　消　</button></a>
+	  	</td>
+	  	<td class="buttonTdo"><button type="button" class="btn btn-primary" data-toggle="{{addModal}}" data-target=".bs-example-modal-sm" ng-click = "updateUser()">　更　新　</button>
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal" ng-click = "addSuccess()"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+		          <h4 class="modal-title" id="mySmallModalLabel">提示</h4>
+		        </div>
+		        <div class="modal-body">
+		          修改成功
+		        </div>
+		    </div>
+		  </div>
+		</div>
+	  	</td>
+	  </tr>
+	</table>
+</div>

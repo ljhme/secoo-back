@@ -1,0 +1,49 @@
+.addUserContainer{
+	table{
+		tr{
+			td{
+				input[type='text']{
+					width: 100%;
+					border: none;
+					background: #F5F5F5;
+				}
+				.photo{
+					display: flex;
+					border: 1px solid #E1E1E1;
+					justify-content: center;
+					align-items: center;
+					width:120px;
+					height: 140px;
+					margin-left: 8%;
+					span{
+						font-size: 64px;
+					}
+				}
+				.errorMes{
+					color: red;
+				}
+				span{
+					margin: 18px 0 0 16px;
+					font-size: 18px;
+					color: #CCAA55;
+				}
+			}
+			.photoTd{
+				width: 120px;
+				input{
+					width: 120px;
+					margin-left: 10%;
+				}
+			}
+			.buttonTd{
+				border: none;
+			}
+			.buttonTdo{
+				border-left: none;
+			}
+		}
+		.buttonTr{
+			border: none;
+		}
+	}
+}

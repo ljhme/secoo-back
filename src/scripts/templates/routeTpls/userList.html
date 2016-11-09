@@ -1,0 +1,47 @@
+<div class="userListContianer">
+	<link-nav></link-nav>
+	<div class="userListSearch">
+		<span>搜 索 : </span>
+		<div>
+			<input type="text" class="form-control" placeholder="请输入关键字...">
+		</div>
+	</div>
+	<table class="table table-hover">
+	  <tr>
+	  	<td ng-repeat="item in userInfoTitle">{{item}}</td>
+	  </tr>
+	  <tr ng-repeat="user in allUserInfo">
+	  	<td ng-repeat="eachUserInfo in user">{{eachUserInfo}}</td>
+	  	<td>
+	  	<a href="#/updateUserInfo/{{user.id}}"><i class="glyphicon glyphicon-pencil userModify"><span>修改</span></i></a>
+	  	<button type="button" class="glyphicon glyphicon-trash userDelete" ng-click="deleteUser(user.id,$index)" data-toggle="modal" data-target=".bs-example-modal-sm"><span>删除</span></button>
+	  	</td>
+	  </tr>
+	</table>
+
+
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm">
+	    <div class="modal-content">
+	      	<div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+	          <h4 class="modal-title" id="mySmallModalLabel">提示</h4>
+	        </div>
+	        <div class="modal-body">你确定要删除吗？</div>
+	        <div class="ackDeleteButton">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="ackDelete()">确定</button>
+		        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	
+
+
+
+
+
+
+</div>
